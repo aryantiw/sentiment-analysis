@@ -20,7 +20,7 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 csvFile = open('file-name', 'a')
 csvWriter = csv.writer(csvFile)
  
-search_words = "sex"      # enter your words
+search_words = "NEP2020"      # enter your words
 new_search = search_words + " -filter:retweets"
  
 for tweet in tweepy.Cursor(api.search,q=new_search,count=100,
